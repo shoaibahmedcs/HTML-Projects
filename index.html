@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div>
+                    <input type="text" id="display">
+                </div>
+                <div>
+                    <input type="button" class = "button" id = "funckey"value="AC" onclick="clearScreen()">
+                    <input type="button" class = "button" id = "funckey" value="%" onclick = "ch('%')">
+                    <input type="button" class = "button" id = "funckey" value=&larr; onclick="DelEndNum()">
+                    <input type="button" class = "button" id = "funckey" value=&divide; onclick="ch('/')">
+
+                </div>
+                <div>
+                    <input type="button" class = "button" value="7" onclick="ch('7')">
+                    <input type="button" class = "button" value="8" onclick="ch('8')">
+                    <input type="button" class = "button" value="9" onclick="ch('9')">
+                    <input type="button" class = "button" id = "funckey" value=&#215;  onclick="ch('*')">
+
+                </div>
+                <div>
+                    <input type="button" class = "button" value="4" onclick="ch('4')">
+                    <input type="button" class = "button" value="5" onclick="ch('5')">
+                    <input type="button" class = "button" value="6"  onclick="ch('6')">
+                    <input type="button" class = "button" id = "funckey" value="-"  onclick="ch('-')">
+                </div>
+                <div>
+                    <input type="button" class = "button" value="1" onclick="ch('1')">
+                    <input type="button" class = "button" value="2" onclick="ch('2')">
+                    <input type="button" class = "button" value="3" onclick="ch('3')">
+                    <input type="button" class = "button" id = "funckey" value="+" onclick="ch('+')">
+                </div>
+                <div>
+                    <input type="button" class = "button" value="00" onclick="ch('00')">
+                    <input type="button" class = "button" value="0" onclick="ch('0')">
+                    <input type="button" class="button" value="." onclick="ch('.')">
+                    <input type="button" class = "button" id="equals" value="="  onclick="ans()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
